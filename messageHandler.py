@@ -31,7 +31,7 @@ def load_modules():
    files = os.listdir("commands")
    modules = filter(lambda x: x.endswith('.py'), files)
    for m in modules:
-       importlib.import_module("commands." + m[0:-3])
+      importlib.import_module("commands." + m[0:-3])
    import info 
 
 def get_answer(event):
@@ -43,7 +43,7 @@ def get_answer(event):
     for k in c.keys:
       d = damerau_levenshtein_distance(event.text, k)
       if d == 0 or d < distance * 0.4:
-        if c.keys[0] == 'статус':
+        if c.keys[0] == ' ^  ^    ^  ^  ^ ' or c.keys == 'погода':
           message, attachment = c.process(event.text)
         else:
           message, attachment = c.process(event.user_id)

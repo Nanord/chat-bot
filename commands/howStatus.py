@@ -5,12 +5,16 @@ import random
 import vkApi
 
 def hay(text):		
-	if id == None:
-		message = 'Введите id Пользователя.'
-	else:	
-		message = vkApi.getStatus(id)
-	return message, ''
-
+	try:
+		if id == None:
+			message = 'Введите id Пользователя.'
+		else:	
+			message = vkApi.getStatus(text)
+	except Exception as e:
+		message = str(e)
+	finally:
+		return message, ''
+	
 hello_command = command_system.Command()
 hello_command.keys = ['статус']
 hello_command.description = 'скажу статус'
