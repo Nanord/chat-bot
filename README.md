@@ -1,4 +1,4 @@
-'def string_to_bit_array(text):#переводит строку в список бит
+`def string_to_bit_array(text):#переводит строку в список бит
 	array = list()
 	for char in text:
 	    binval = binvalue(char, 8)
@@ -15,4 +15,4 @@ def binvalue(val, bitsize): #Возвращает двоичное значен�
         raise "binary value larger than the expected size"
     while len(binval) < bitsize:
         binval = "0"+binval #Добавляет 0, чтобы получить желаемый размер
-    return binval'
+    return binval`
