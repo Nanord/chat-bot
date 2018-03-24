@@ -1,4 +1,3 @@
-##элемент маркированного списка##
-+ ещё один элемент ненумерованного списка
-+ буллеты элементов могут быть разными
- 
+As Grace Hopper said:
+> I’ve always been more interested
+> in the future than in the past.
