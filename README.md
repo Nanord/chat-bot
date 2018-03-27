@@ -1,3 +1,3 @@
 # Чат бот для vk.com
-  ##Технология## - _Callback API_
-  ##Database## - _MongoDB_
+  * __Технология__ - _Callback API_
+  * __Database__ - _MongoDB_
